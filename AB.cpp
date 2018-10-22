@@ -21,7 +21,7 @@ class AB{
                 if (tempK!=0){                              // 第一个A不用替换，替换了会破坏上面公式
                 	s[N-i] = 'A';                        // 将最前面的B替换成A
                 	s[tempK] = 'B';                      //将算好的index的A替换成B
-               		break;                      //已经不需要B进串了
+               		break;                       //已经不需要B进串了
                 }
             }
     	}
