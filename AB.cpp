@@ -35,6 +35,4 @@ class AB{
 希望能学习大牛们的解体思路。
 */
 
-/*
-github 的代码预览为什么和编辑模式的对齐不一样呢
-*/
+/*找到一份值得学习的代码：https://blog.csdn.net/PYLON_GCL/article/details/70341703 */
