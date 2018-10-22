@@ -9,7 +9,7 @@ class AB{
         string s(N, 'A');                                   // 创建一个全是‘A’的串
         if (K==0) return s;                                 // 极限条件直接返回
         if (N % 2 == 0){
-        	if (K > N*N/4) return "";}                      // N为偶数的极限条件，如果K大于AB能出现的最多的pair数，直接返回空串
+        	if (K > N*N/4) return "";}                  // N为偶数的极限条件，如果K大于AB能出现的最多的pair数，直接返回空串
         else{
             if (K > (N*N-1)/4) return "";}                  // N为奇数的极限条件
         // 开始考虑有AB pair出现的情况
