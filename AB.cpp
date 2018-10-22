@@ -9,11 +9,11 @@ class AB{
         string s(N, 'A');                                   // 创建一个全是‘A’的串
         if (K==0) return s;                                 // 极限条件直接返回
         if (N % 2 == 0){
-        	if (K > N*N/4) return "";}                  // N为偶数的极限条件，如果K大于AB能出现的最多的pair数，直接返回空串
+        	if (K > N*N/4) return "";}                    // N为偶数的极限条件，如果K大于AB能出现的最多的pair数，直接返回空串
         else{
             if (K > (N*N-1)/4) return "";}                  // N为奇数的极限条件
         // 开始考虑有AB pair出现的情况
-    	for(int i=1; i<=int((N+1)/2); i++){                 // 最多有int(N+1)/2个B在串里
+    	for(int i=1; i<=int((N+1)/2); i++){               // 最多有int(N+1)/2个B在串里
             string res(i,'B');                              // 对于有i个B的情况，先建一个有i个B的串
             s.replace(N-i, i+1, res);                       // 将上面的串放进s里替代最后的i个A
             if (((N-(i-1))*(i-1) < K) && (K <= (N-i)*i)){   // 根据K的值判断串里有多少个B，如果等于i，进if
