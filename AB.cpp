@@ -19,9 +19,9 @@ class AB{
             if (((N-(i-1))*(i-1) < K) && (K <= (N-i)*i)){   // 根据K的值判断串里有多少个B，如果等于i，进if
            		int tempK = K - (N-(i-1))*(i-1)+(i-1);      // 寻找串中最前面的B应该替换的A的index
                 if (tempK!=0){                              // 第一个A不用替换，替换了会破坏上面公式
-                	s[N-i] = 'A';                           // 将最前面的B替换成A
-                	s[tempK] = 'B';                         //将算好的index的A替换成B
-               		break;                                  //已经不需要B进串了
+                	s[N-i] = 'A';                         // 将最前面的B替换成A
+                	s[tempK] = 'B';                       //将算好的index的A替换成B
+               		break;                              //已经不需要B进串了
                 }
             }
     	}
